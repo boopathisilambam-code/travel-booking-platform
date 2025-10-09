@@ -14,7 +14,7 @@ export default function Login() {
     setError('');
     setSuccess('');
     try {
-      const res = await axios.post('http://localhost:5000/api/login', { email, password });
+      const res = await axios.post(`${process.env.REACT_APP_API_URL}/api/login`, { email, password });
       localStorage.setItem('token', res.data.token);
 
       setSuccess('Login successful! Redirecting to Home...');
