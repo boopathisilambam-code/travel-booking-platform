@@ -1,0 +1,131 @@
+/* Container */
+.pd-container {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: #f9fafb;
+}
+
+/* Error Container */
+.pd-error-container {
+  max-width: 500px;
+  margin: 60px auto;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+/* Back Button */
+.pd-btn-back {
+  display: inline-block;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #252323;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.pd-btn-back:hover {
+  background: #ff4757;
+  transform: translateY(-2px);
+}
+
+
+/* Card */
+.pd-card {
+  display: flex;
+  flex-wrap: wrap;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+  overflow: hidden;
+  animation: pd-fadeIn 0.8s ease forwards;
+}
+
+/* Image */
+.pd-img {
+  flex: 1 1 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+/* Info Section */
+.pd-info {
+  flex: 2 1 400px;
+  padding: 20px;
+  text-align: left;
+}
+
+.pd-title {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #1f2937;
+}
+
+.pd-duration,
+.pd-price {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+.pd-description {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Reviews */
+.pd-reviews-title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #3b6bd2;
+}
+
+.pd-reviews {
+  list-style: none;
+  padding-left: 0;
+}
+
+.pd-review-item {
+  padding: 8px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* Book Button */
+.pd-btn-book {
+  background-color: #3b82f6;
+  width:fit-content;
+  color: white;
+  
+  margin-top: 15px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.pd-btn-book:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Fade-in Animation */
+@keyframes pd-fadeIn {
+  0% { opacity: 0; transform: translateY(-20px);}
+  100% { opacity: 1; transform: translateY(0);}
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pd-card {
+    flex-direction: column;
+  }
+  .pd-img {
+    height: 250px;
+  }
+}
